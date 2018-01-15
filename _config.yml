@@ -1,0 +1,21 @@
+name: ProductGuide
+description: "Curated resources for product managers"
+meta_description: "Curated resources for product managers"
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+excerpt_separator: <!--more-->
+baseurl: '/'
+
+# Details for the RSS feed generator
+url:            'http://www.productbook.io'
+author:         'Loki Meyburg'
+
+gems: ['jekyll-paginate']
+
+collections:
+  sections:
+    output: true
+    permalink: /section/:path/

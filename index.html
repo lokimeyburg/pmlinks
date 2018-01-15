@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+---
+  <div class="striped-background">
+    <div class="stripe s0"></div>
+    <div class="stripe s2"></div>
+    <div class="stripe s3"></div>
+    <div class="stripe s4"></div>
+  </div>
+
+<div class="hero">
+  <h1 class="hero-title">ProductGuide</h1>
+  <h3 class="hero-description">The essential resource for Product Managers. Loaded with articles, videos, podcasts, and more.</h3>
+</div>
+
+<div class="container">
+
+  <div id="cards" class="flex two four-600">
+
+    {% for section in site.data.sections %}
+      <div>
+
+        <a href="{{ section.url }}" class="card {{ section.category }}">
+          <div class="content">
+            <div class="cover">
+              <img src="http://www.tinygraphs.com/labs/isogrids/hexa/{{section.name}}?theme={% if section.category == 'Building' %}daisygarden{% elsif section.category == 'Planning' %}bythepool{% elsif section.category == 'Design' %}sugarsweets{% elsif section.category == 'Career' %}heatwave{% elsif section.category == 'Fundamentals' %}duskfalling{% endif %}&numcolors=3&size=277&fmt=svg">
+            </div>
+
+            <div class="title">
+              <h3>{{ section.category }}</h3>
+              <h1>{{ section.name }}</h1>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+</div>

@@ -40,7 +40,7 @@
 
 	       	<a class="logo" href="/">
 		  		<img src="/assets/images/logo.svg" height="35px" width="35px" alt="ProductGuide" />
-		  		<span class="logo-text">ProductGuide</span>
+		  		<span class="logo-text">Product Management ToolKit</span>
 	  		</a>
 	    </div>
 	</nav>
@@ -50,18 +50,12 @@
 		<div id="guide-container" class="flex one two-800">
 			<div id="guide-sidebar" class="full fourth-800">
 				{% for section in site.data.sections %}
+					{% capture full_url %}{{ site.baseurl | append: section.url }}{% endcapture%}
 
-	      			<a class="section-link {% if section.url == page.url %} active {% endif %} {{ section.category }}" href="{{section.url}}">
-	      				<span class="section-icon">
-
-
-	      				</span>
-
-
-
+	      			<a class="section-link {% if full_url == page.url %} active {% endif %} {{ section.category }}" href="{{site.baseurl}}{{section.url}}">
+	      				<span class="section-icon"></span>
 
 	      				{{ section.name }}
-
 	      			</a>
 	    		{% endfor %}
 			</div> <!-- /fifth-1000 -->

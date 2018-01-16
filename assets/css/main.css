@@ -4,7 +4,7 @@ html, body {
 }
 
 body.default {
-	background-color: #fff;
+	background-color: #F9F9F9;
 }
 
 /*===== Homepage*/
@@ -14,67 +14,11 @@ body.default {
     max-width: 900px;
 }
 
-
-.striped-background {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    right: 0;
-    transform: skewY(-12deg);
-    pointer-events: none;
-
-    top: 0;
-    height: 608px;
-    z-index: -1;
-}
-
-.striped-background .stripe {
-    position: absolute;
-    top: auto;
-    left: 0;
-    right: 0;
-    height: 190px;
-}
-
-.striped-background .s1 {
-    bottom: 0;
-    height: 1000px;
-    background: linear-gradient(180deg,rgba(230,235,241,.45),rgba(246,249,252,.5));
-}
-
-.striped-background .s2 {
-    bottom: 190px;
-    background: hsla(0,0%,100%,.45);
-    right: 70%;
-}
-
-.striped-background .s3 {
-    bottom: 380px;
-    background: #f6f9fc;
-}
-
-.striped-background .s4 {
-    bottom: 570px;
-    background: linear-gradient(90deg,#f6f9fc,#e6ebf1);
-}
-
 .hero {
     text-align: center;
+    margin-top: 100px;
 }
 
-h1.hero-title {
-    margin-top: 20px;
-    color: #32325d;
-    font-weight: 400;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;   
-    font-size: 400px;
-    margin: 0px;
-    margin-top: 20px;
-    line-height: 50px;
-}
 
 h3.hero-description {
     margin-left: auto;
@@ -224,20 +168,93 @@ h3.hero-description {
 
 
 
- /*===== Sections */
+ /*===== Section Pages */
 
 body.section {
-	background-color: #f5f7f9;
+	background-color: #F9F9F9;
 }
 
+nav {
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+nav .nav-container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+nav .logo img {
+    margin-top: 12px;
+}
+
+nav .logo-text {
+    display: none;
+}
+
+nav .back-home {
+    line-height: 18px;
+    font-size: 14px;
+    left: 10px;
+    top: 20px;
+    position: absolute;
+    font-weight: 300;
+}
+
+@media (min-width: 800px) {
+    nav {
+        text-align: left;
+    }
+
+    nav .back-home {
+        display: none;
+    }
+
+    nav .logo-text {
+        display: inline;
+        font-weight: bold;
+        line-height: 60px;
+        vertical-align: top;
+        padding-left: 5px;
+        font-size: 22px;
+        color: #0C4854;
+    }
+}
+
+
+nav .back-home img {
+    float: left;
+}
 
 #guide-container {
     text-align: left;
-    width: 90%;
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 40px 0 0;
+    padding: 60px 0 0;
 }
+
+#guide-sidebar {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    #guide-sidebar {
+        display: block;
+        margin-top: 30px;
+    }    
+
+
+    #guide-content {
+        box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+        margin-top: 30px;
+        border-radius: 3px;
+    }    
+}
+
 
 #guide-sidebar .section-link {
 	display: flex;
@@ -250,59 +267,112 @@ body.section {
     text-align: left;
     cursor: pointer;
 
-    font-size: 14px;
-    color: #0d2b3e;
+    font-size: 13px;
+    color: #333;
     font-weight: 500;
     height: 36px;
     line-height: 36px;
+
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-#guide-sidebar .section-link:hover {
-	background-color: #fff;
-}
-
-.section-content {
-    background-color: #fff;
-    padding: 2em 2em 3em 2em;
-    max-width: 700px;
-    min-height: 100%;
-    border-right: 1px solid #f1f1f1;
-    border-left: 1px solid #f1f1f1;
-}
-
-h5.section-title {
-    margin-bottom: .5em;
+#guide-sidebar .section-link.active {
     font-weight: bold;
-    font-size: 14px;
+}
+
+.section-link .section-icon {
+    margin-right: 10px;
+    background-color: #8D50D8;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+}
+
+.section-link.Planning .section-icon {
+    background-color: #60BBF0;
+}
+
+#guide-sidebar .section-link.Planning.active {
+    /*color: #60BBF0;   */
+}
+
+.section-link.Design .section-icon {
+    background-color: #E64986;
+}
+
+.section-link.Building .section-icon {
+    background-color: #88AB29;
+}
+
+.section-link.Career .section-icon {
+    background-color: #FD8C2C;
+    
+}
+
+
+#guide-content {
+    padding-left: 0px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+h1.section-title {
     color: #202020;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
 }
 
 h6.section-description {
-    font-size: 13px;
-    color: #aaa;
-    font-weight: normal;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
 }
 
-.section-items a {
+h5.subsection-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #202020;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(0,0,0,0.0785);
+}
+
+h5.subsection-title .bottom {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.subsection-items a {
     padding: 15px 0px;
     display: block;
     color: #202020;
-    border-top: solid 1px #f1f1f1;
 }
 
 /*.section-items a:hover {
     background-color: #fafafa;
 }*/
 
-.section-items a .item-title {
+.subsection-items a .item-title {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
     color: #202020;
+    display: block;
 }
 
-.section-items a .item-author {
-    font-size: 12px;
-    float: right;
-    color: #aaa;
-    font-style: italic;
+.subsection-items a .item-author {
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    font-weight: 400;
+    display: block;
 }
 
 

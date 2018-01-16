@@ -4,61 +4,61 @@
 
 - name: Becoming a Product Manager
   category: Fundamentals
-  url: "/section/2-becoming-a-product-manager"
+  url: "/section/2-becoming-a-product-manager/"
 
 - name: User Research
   category: Planning
-  url: "/section/3-research"
+  url: "/section/3-research/"
 
 - name: Personas
   category: Planning
-  url: "/section/personas"
+  url: "/section/personas/"
 
 - name: Product Strategy
   category: Planning
-  url: "/section/5-strategy"
+  url: "/section/5-strategy/"
 
 - name: Roadmapping
   category: Planning
-  url: "/section/7-roadmapping"
+  url: "/section/7-roadmapping/"
 
 - name: Agile Methodologies
   category: Building
-  url: "/section/6-building-great-products"
+  url: "/section/6-building-great-products/"
 
 - name: Product Launch
   category: Building
-  url: "/section/product-launch"
+  url: "/section/product-launch/"
 
 - name: Data and Analytics
   category: Building
-  url: "/section/data-and-analytics"
+  url: "/section/data-and-analytics/"
 
 - name: Design Sprint
   category: Design
-  url: "/section/design-sprint"
+  url: "/section/design-sprint/"
 
 - name: Prototyping
   category: Design
-  url: "/section/prototyping"
+  url: "/section/prototyping/"
 
 - name: Usability Tests
   category: Design
-  url: "/section/usability-tests"
+  url: "/section/usability-tests/"
 
 - name: Working with Engineers
   category: Career
-  url: "/section/8-working-with-engineers"
+  url: "/section/8-working-with-engineers/"
 
 - name: Team Organization
   category: Career
-  url: "/section/11-team-organization"
+  url: "/section/11-team-organization/"
 
 - name: Leadership
   category: Career
-  url: "/section/12-leadership"
+  url: "/section/12-leadership/"
 
 - name: Becoming Great
   category: Career
-  url: "/section/13-becoming-great"
+  url: "/section/13-becoming-great/"
 

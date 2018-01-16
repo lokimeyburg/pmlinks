@@ -30,27 +30,53 @@
 <body class="section">
 
 	<nav>
-	  <a class="brand" href="/"><span>Product Guide</span></a>
+		<div class="nav-container">
+			<div class="back-home">
+	        	<a href="/">
+	        		<img class="chevron-left" src="/assets/images/left-chevron.svg" height="18px" width="18px" />
+	        		Back
+	        	</a>      
+	        </div>
+
+	       	<a class="logo" href="/">
+		  		<img src="/assets/images/logo.svg" height="35px" width="35px" alt="ProductGuide" />
+		  		<span class="logo-text">ProductGuide</span>
+	  		</a>
+	    </div>
 	</nav>
 
 
 
-		<div id="guide-container" class="flex five">
-			<div id="guide-sidebar" class="full fourth-1000">
+		<div id="guide-container" class="flex one two-800">
+			<div id="guide-sidebar" class="full fourth-800">
 				{% for section in site.data.sections %}
-	      	<a class="section-link" href="{{section.url}}">{{ section.name }}</a>
-	    	{% endfor %}
+
+	      			<a class="section-link {% if section.url == page.url %} active {% endif %} {{ section.category }}" href="{{section.url}}">
+	      				<span class="section-icon">
+
+
+	      				</span>
+
+
+
+
+	      				{{ section.name }}
+
+	      			</a>
+	    		{% endfor %}
 			</div> <!-- /fifth-1000 -->
-			<div class="full three-fourth-1000">
+			<div id="guide-content" class="full three-fourth-800">
 				<div class="section-content">
 
-					<h5 class="section-title">{{ site.data.sections-content[page.name].title }}</h5>
+					<h1 class="section-title">{{ site.data.sections-content[page.name].title }}</h5>
 					<h6 class="section-description">{{ site.data.sections-content[page.name].description }}</h6>
 
 						{% for section in site.data.sections-content[page.name].sections %}
-							<h5 class="section-title">{{ section.title }}</h5>
+							<h5 class="subsection-title">
+								<span class="bottom">{{ section.title }}</span>
+							</h5>
 
-							<div class="section-items">
+							<div class="subsection-items">
 							{% for item in section.items %}
 								<a href="{{ item.url }}" target="_blank">
 									<span class="item-title">{{ item.title }}</span>

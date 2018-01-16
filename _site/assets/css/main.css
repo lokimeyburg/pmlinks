@@ -224,6 +224,11 @@ nav .back-home {
     nav .back-home {
         display: none;
     }
+
+    body.section nav .logo-text {
+        display: inline;
+    }
+
 }
 
 

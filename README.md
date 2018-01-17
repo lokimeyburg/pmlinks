@@ -1,3 +1,3 @@
-# ProductGuide
+# Product Management Links
 
-ProductGuide is the essential resource for Product Managers. www.lokimeyburg.com/productguide/
+Product Mangement Links is my carefully curated list of essential resources for Product Managers. www.lokimeyburg.com/pmlinks/

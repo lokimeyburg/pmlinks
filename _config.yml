@@ -1,16 +1,16 @@
-name: ProductGuide
-description: "Curated resources for product managers"
-meta_description: "Curated resources for product managers"
+name: Product Management Guide
+description: "Essential resources for Product Managers"
+meta_description: "Essential resources for Product Managers"
 
 markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
 excerpt_separator: <!--more-->
-baseurl: '/ProductGuide/'
+baseurl: '/'
 
 # Details for the RSS feed generator
-url:            'http://www.productbook.io'
+url:            'http://www.lokimeyburg.com/ProductGuide/'
 author:         'Loki Meyburg'
 
 gems: ['jekyll-paginate']

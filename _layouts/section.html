@@ -40,7 +40,7 @@
 
 	       	<a class="logo" href="{{ site.baseurl }}">
 		  		<img src="{{site.baseurl}}assets/images/logo.svg" height="35px" width="35px" alt="ProductGuide" />
-		  		<span class="logo-text">Product Management Toolkit</span>
+		  		<span class="logo-text">Product Management Guide</span>
 	  		</a>
 	    </div>
 	</nav>
@@ -49,6 +49,9 @@
 
 		<div id="guide-container" class="flex one two-800">
 			<div id="guide-sidebar" class="full fourth-800">
+
+				{{ page.url }}
+
 				{% for section in site.data.sections %}
 					{% capture full_url %}{{ site.baseurl | append: section.url }}{% endcapture%}
 

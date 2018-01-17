@@ -27,15 +27,20 @@ h3.hero-description {
     max-width: 800px;
     color: #525f7f;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (min-width: 400px) {
+    h3.hero-description{
+        font-size: 20px;
+        line-height: 36px;
+    }
 }
 
 @media (min-width: 670px) {
-    h1.hero-title {
-        font-size: 40px;
-        line-height: 50px;
-    }
 
     h3.hero-description{
         font-size: 24px;
@@ -197,15 +202,15 @@ body.section nav .logo-text {
     display: none;
 }
 
-    nav .logo-text {
-        display: inline;
-        font-weight: bold;
-        line-height: 60px;
-        vertical-align: top;
-        padding-left: 5px;
-        font-size: 22px;
-        color: #0C4854;
-    }
+nav .logo-text {
+    display: inline;
+    font-weight: bold;
+    line-height: 60px;
+    vertical-align: top;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #0C4854;
+}
 
 nav .back-home {
     line-height: 18px;
@@ -214,6 +219,12 @@ nav .back-home {
     top: 20px;
     position: absolute;
     font-weight: 300;
+}
+
+@media (min-width: 400px) {
+    nav .logo-text {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -230,7 +241,6 @@ nav .back-home {
     }
 
 }
-
 
 nav .back-home img {
     float: left;
@@ -258,6 +268,7 @@ nav .back-home img {
     #guide-content {
         box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
         margin-top: 30px;
+        margin-bottom: 30px;
         border-radius: 3px;
     }    
 }

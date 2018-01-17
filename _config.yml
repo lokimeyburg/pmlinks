@@ -1,4 +1,4 @@
-name: Product Management Guide
+name: Product Management Links
 description: "Essential resources for Product Managers"
 meta_description: "Essential resources for Product Managers"
 
@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 baseurl: '/pmlinks/'
 
 # Details for the RSS feed generator
-url:            'http://www.lokimeyburg.com/ProductGuide/'
+url:            'http://www.lokimeyburg.com/pmlinks/'
 author:         'Loki Meyburg'
 
 gems: ['jekyll-paginate']

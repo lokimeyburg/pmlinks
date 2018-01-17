@@ -40,7 +40,7 @@
 
 	       	<a class="logo" href="{{ site.baseurl }}">
 		  		<img src="{{site.baseurl}}assets/images/logo.svg" height="35px" width="35px" alt="ProductGuide" />
-		  		<span class="logo-text">Product Management Guide</span>
+		  		<span class="logo-text">Product Management Links</span>
 	  		</a>
 	    </div>
 	</nav>
@@ -49,11 +49,8 @@
 
 		<div id="guide-container" class="flex one two-800">
 			<div id="guide-sidebar" class="full fourth-800">
-
-				{{ page.url }}
-
 				{% for section in site.data.sections %}
-					{% capture full_url %}{{ site.baseurl | append: section.url }}{% endcapture%}
+					{% capture full_url %}{{ "/" | append: section.url }}{% endcapture%}
 
 	      			<a class="section-link {% if full_url == page.url %} active {% endif %} {{ section.category }}" href="{{site.baseurl}}{{section.url}}">
 	      				<span class="section-icon"></span>
